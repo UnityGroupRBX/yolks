@@ -35,4 +35,4 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            ghcr.io/UnityGroupRBX/yolks:${{ matrix.tag }}
+            ghcr.io/unitygrouprbx/yolks:${{ matrix.tag }}
