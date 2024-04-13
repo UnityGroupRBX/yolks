@@ -50,7 +50,7 @@ jobs:
           cache-to: type=local,dest=/tmp/.buildx-cache-new
           push: true
           tags: |
-            ghcr.io/UnityGroupRBX/yolks:bot_${{ matrix.tag }}
+            ghcr.io/unitygrouprbx/yolks:bot_${{ matrix.tag }}
       - name: Move cache
         run: |
           rm -rf /tmp/.buildx-cache
