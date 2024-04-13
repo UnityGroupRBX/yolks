@@ -38,4 +38,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/parkervcp/yolks:redis_${{ matrix.tag }}
+            ghcr.io/unitygrouprbx/yolks:redis_${{ matrix.tag }}
