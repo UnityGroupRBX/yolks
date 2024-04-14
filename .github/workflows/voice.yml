@@ -1,4 +1,3 @@
-runs-on: self-hosted
 name: build voice
 on:
   workflow_dispatch:
@@ -12,7 +11,7 @@ on:
 jobs:
   pushx64:
     name: "yolks:voice_${{ matrix.tag }}"
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
@@ -39,7 +38,7 @@ jobs:
 
   pushx64_arm64:
     name: "yolks:voice_${{ matrix.tag }}"
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
