@@ -11,7 +11,7 @@ on:
 jobs:
   pushx64:
     name: "yolks:voice_${{ matrix.tag }}"
-    runs-on: central
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -38,7 +38,7 @@ jobs:
 
   pushx64_arm64:
     name: "yolks:voice_${{ matrix.tag }}"
-    runs-on: central
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
