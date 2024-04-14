@@ -11,7 +11,7 @@ on:
 jobs:
   pushx64:
     name: "yolks:voice_${{ matrix.tag }}"
-    runs-on: self-hosted
+    runs-on: central
     strategy:
       fail-fast: false
       matrix:
