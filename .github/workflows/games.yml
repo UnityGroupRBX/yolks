@@ -41,7 +41,7 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/parkervcp/games:${{ matrix.game }}
+            ghcr.io/unitygrouprbx/games:${{ matrix.game }}
   pushAll:
     name: "games_All:${{ matrix.game }}"
     runs-on: ubuntu-latest
