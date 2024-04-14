@@ -1,3 +1,4 @@
+runs-on: self-hosted
 name: build voice
 on:
   workflow_dispatch:
@@ -34,7 +35,7 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-             ghcr.io/parkervcp/yolks:voice_${{ matrix.tag }}
+             ghcr.io/unitygrouprbx/yolks:voice_${{ matrix.tag }}
 
   pushx64_arm64:
     name: "yolks:voice_${{ matrix.tag }}"
